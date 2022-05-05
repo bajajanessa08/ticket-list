@@ -1,0 +1,16 @@
+.pointer {
+    cursor: pointer;
+}
+
+label {
+    margin-bottom: .25rem;
+
+    &.label-required {
+        &.required::after {
+            content: "*";
+            display: inline-block;
+            color: #FF4757;
+            margin-left: 5px;
+        }
+    }
+}
